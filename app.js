@@ -17,5 +17,14 @@ res.end(`<h1>We cant find your page</h1>
 `)
 })
 
+//demo of using the node package manager and package.json
+//first install the package lodash, then use it here like this.
+const _=require('lodash')
+const items=[1,2,3,[4,5,5,5,[4545485]]]
+const newItems=_.flattenDeep(items)
+console.log(newItems)
+
+
+
 
 server.listen(5000);
